@@ -1,0 +1,40 @@
+/**
+ * 作者：yeshengqiang
+ * 时间：2018-03-21
+ * 描述：变量
+ */
+ // common
+ $body_bg:                          #F2F2F2 !default;                     // body背景颜色
+ $global_active_color:              #1987D2 !default;                     // 全局默认active颜色
+ $global_color:                     #DC3F3E !default;                     // 全局色系
+ $white:                            #FFFFFF !default;                     // 白色
+ $second_bg:                        #f4f4f4 !default;                     // 二级页面背景
+ $base_line_height:                   20 / 14 !default;                     // line-height
+ // main
+ $grid_border:                      #EEEEEE !default;                     // 网格border颜色
+ $grid_font_color:                  #5C5C5C !default;                     // 网格字体颜色
+
+ // login
+ $felid_border:                     #D2D2D2 !default;                     // 输入框border颜色
+ $tabbar_bg:                        #ECECEC !default;                     // tabbar背景颜色
+ $tabbar_font_color:                #717171 !default;                     // tabbar字体颜色
+ $input_placeholder_color:          #999797 !default;                     // 文本框提示文字颜色
+
+ // 车辆列表
+ $list_bg:                          #f2f2f2 !default;                     // list背景颜色
+ $list_header:                      $grid_font_color !default;              // 车辆列表详情
+ $list_detail:                      #858585 !default;                     // 车辆列表详情
+ $list_border:                      #DBDBDB !default;                     // 车辆列表border颜色
+
+ //字体定义规范
+$font-size-5  :                   0.20rem;                                // 5px
+$font-size-8  :                   0.34rem;                                // 8px;
+$font-size-10 :                   0.40rem;                                // 10px;
+$font-size-12 :                   0.48rem;                                // 12px;
+$font-size-13 :                   0.55rem;                                // 13px;
+$font-size-14 :                   0.56rem;                                // 14px;
+$font-size-15 :                   0.60rem;                                // 15px;
+$font-size-16 :                   0.64rem;                                // 16px;
+$font-size-18 :                   0.72rem;                                // 18px;
+$font-size-20 :                   0.80rem;                                // 20px;
+$font-size-22 :                   0.88rem;                                // 22px;

@@ -1,0 +1,306 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5CF6BEE4",
+	"name": "江淮汽车 ",
+	"version": {
+		"name": "V2.0.8",
+		"code": "130"
+	},
+	"description": "",
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",
+	"developer": {
+		"name": "",
+		"email": "",
+		"url": ""
+	},
+	"permissions": {
+		"Invocation": {
+			"description": "Native.js"
+		},
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Maps": {},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Uploader": {
+			"description": "文件上传，管理文件上传任务"
+		},
+		"Zip": {
+			"description": "压缩与解压"
+		},
+		"Geolocation": {
+			"description": "位置信息"
+		},"Push":{}
+	},
+	"plus": {
+		"statusbar": {
+			"immersed": true
+		},
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {"plugins":{"push":{"igexin":{"appid":"dczI058R327tkYZUV1zKl6","appkey":"ytc8bRD6oA6YhsDeq0CFm4","appsecret":"sQzlS0UZchAVIsLb0Luxi"}},"maps":{"amap":{"appkey_ios":"0c73514222ce5c080f0d9b34d51fc0bb","appkey_android":"8e82702d751252729814c4b3928207d2","description":""}}},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密���库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.LOCATION_HARDWARE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"android.permission.BROADCAST_WAP_PUSH\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-permission android:name=\"android.permission.CONTROL_LOCATION_UPDATES\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "", /*iPhone4程序图标，分辨率：114x114*/
+						/*iPhone4S/5/6程序图标，分辨率：120x120*/
+						/*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						/*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@3x": "unpackage/res/icons/60x60.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						/*iPad iOS7程序图标，分辨率：76x76*/
+						/*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app": "unpackage/res/icons/76x76.png",
+						"app@2x": "unpackage/res/icons/152x152.png",
+						"settings": "unpackage/res/icons/29x29.png",
+						"proapp@2x": "unpackage/res/icons/167x167.png",
+						"spotlight": "unpackage/res/icons/40x40.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"notification": "unpackage/res/icons/20x20.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"appstore": "unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "Default-667h@2x.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "Default-667h@2x.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "Default-667h@2x.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "Default-667h@2x.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": "Default-667h@2x.png",
+						"iphonex": "Default-667h@2x.png",
+						"iphonexl": "Default-667h@2x.png"
+					},
+					"ipad": {
+						"portrait": "Default-667h@2x.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "Default-667h@2x.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "Default-667h@2x.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "Default-667h@2x.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "Default-667h@2x.png", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "Default-667h@2x.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "Default-667h@2x.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "Default-667h@2x.png"
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "Default-667h@2x.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "Default-667h@2x.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "Default-667h@2x.png"
+				}
+			}
+		},
+		"ads": {
+			"rp": false,
+			"splash": false,
+			"push": false
+		}
+	},
+	"fullscreen": false,
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"static/js/vendor.2abdff1ebeb6a9827cba.js",
+					"static/js/app.36b6baff71f263698514.js",
+					"static/js/manifest.502601cd66350d8261fe.js",
+					"static/css/app.1da706e4eaf20d7756928f9aa7987553.css",
+					"static/js/manifest.0bac98c87447664a0cad.js",
+					"static/css/app.454c3b6f8c883f5dfa9e37e0b6d6e7b7.css",
+					"static/js/app.820301300634b7a10251.js",
+					"static/js/vendor.05c505902774687b232c.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"static/js/19.a781cce257b32fdabf1b.js.map",
+				"static/js/37.739801a49402dc286b02.js.map",
+				"static/js/36.32e99f1b0cd6c44c8ef9.js.map",
+				"static/js/28.42a5bdc83b8147d7de28.js",
+				"static/img/statistical_report@3x.d7936ac.png",
+				"static/js/27.aa6b966f14b9649bd7e7.js.map",
+				"static/js/13.12d36b722b2053b634e1.js",
+				"static/js/15.539567fb60ce5400c8e9.js",
+				"static/js/30.afc76bb0501a078715a2.js",
+				"static/js/15.539567fb60ce5400c8e9.js.map",
+				"static/js/9.12705443db964c96ef44.js.map",
+				"static/js/18.faf988f02b6cf5027712.js.map",
+				"static/js/14.f1bdc1eb90319ad2ea20.js",
+				"static/js/8.86bef45d60d551360012.js",
+				"static/js/40.b64ca7302f51fe39bd6e.js",
+				"static/js/41.a5d820b4ed6543d4b340.js.map",
+				"static/js/10.05b37ddd13a083085daf.js",
+				"static/img/logo@3x.png",
+				"static/js/6.fb60a2a8e902e97cb317.js",
+				"static/js/22.2ab54747370c1ffa9d83.js.map",
+				"static/img/motorcade_report@3x.068e035.png",
+				"static/js/42.e34336090656f6f82907.js",
+				"static/js/28.42a5bdc83b8147d7de28.js.map",
+				"static/js/40.b64ca7302f51fe39bd6e.js.map",
+				"static/js/30.afc76bb0501a078715a2.js.map",
+				"static/js/24.2418991a972b0efadc5d.js.map",
+				"static/js/20.45062b2e738fcc4a9adf.js",
+				"static/js/42.e34336090656f6f82907.js.map",
+				"static/js/4.3b9b979deb3dc282a759.js.map",
+				"static/js/34.9a0d7334b0b8b1125f43.js",
+				"static/js/vendor.2abdff1ebeb6a9827cba.js.map",
+				"static/img/main_driver@2x.ac8f7cf.png",
+				"static/js/18.faf988f02b6cf5027712.js",
+				"static/js/22.2ab54747370c1ffa9d83.js",
+				"static/js/23.41892de278c00da14ccd.js.map",
+				"static/img/startup_page.51f0386.png",
+				"static/js/5.7bd143a79c3a801f820b.js",
+				"static/js/1.635039b9be1326368135.js.map",
+				"static/js/19.a781cce257b32fdabf1b.js",
+				"static/js/29.d60bf63fd1bab90d2409.js",
+				"static/js/21.02e2c5960d78375ce2b7.js.map",
+				"static/js/17.bb03348823341612edc3.js",
+				"static/js/26.e2bb3c8a7be7db580bfa.js",
+				"static/js/3.1104a65015a21de6e3be.js",
+				"static/img/logo@3x.2d96936.png",
+				"static/js/35.8232dabb7c7322b8bd9c.js",
+				"static/js/13.12d36b722b2053b634e1.js.map",
+				"static/img/motorcade_report@2x.be4e1c4.png",
+				"static/js/11.023781461ad75e7d7110.js",
+				"static/js/11.023781461ad75e7d7110.js.map",
+				"static/js/12.759e706178bda4db7b30.js",
+				"static/js/39.16a78742b79b950ea257.js",
+				"static/js/7.b25fa44817a4537ad911.js.map",
+				"static/js/36.32e99f1b0cd6c44c8ef9.js",
+				"static/js/33.30298a4fe74b9fcb5817.js.map",
+				"static/js/32.a82ad706230427ee9894.js",
+				"static/js/10.05b37ddd13a083085daf.js.map",
+				"static/js/33.30298a4fe74b9fcb5817.js",
+				"static/js/16.bf8beefe3b122af2e9fe.js.map",
+				"static/js/14.f1bdc1eb90319ad2ea20.js.map",
+				"static/js/app.36b6baff71f263698514.js.map",
+				"static/js/27.aa6b966f14b9649bd7e7.js",
+				"static/js/2.fcd7e0e0727b392e4f72.js.map",
+				"static/js/2.fcd7e0e0727b392e4f72.js",
+				"static/js/7.b25fa44817a4537ad911.js",
+				"static/js/16.bf8beefe3b122af2e9fe.js",
+				"static/js/manifest.502601cd66350d8261fe.js.map",
+				"static/js/21.02e2c5960d78375ce2b7.js",
+				"static/js/25.9af664031ffdffc02d59.js.map",
+				"static/js/31.56add37b4dad09e66b1d.js",
+				"static/js/31.56add37b4dad09e66b1d.js.map",
+				"static/img/statistical_report@2x.0a5672e.png",
+				"static/js/29.d60bf63fd1bab90d2409.js.map",
+				"static/js/8.86bef45d60d551360012.js.map",
+				"static/js/20.45062b2e738fcc4a9adf.js.map",
+				"static/js/25.9af664031ffdffc02d59.js",
+				"static/js/34.9a0d7334b0b8b1125f43.js.map",
+				"static/img/logo@2x.b438dc6.png",
+				"static/img/score_header@3x.a3613ae.png",
+				"static/js/26.e2bb3c8a7be7db580bfa.js.map",
+				"static/js/24.2418991a972b0efadc5d.js",
+				"static/img/banner.90657f7.png",
+				"static/js/3.1104a65015a21de6e3be.js.map",
+				"static/js/17.bb03348823341612edc3.js.map",
+				"static/js/1.635039b9be1326368135.js",
+				"static/js/0.42e9bca97dc54a132053.js.map",
+				"static/js/38.f4191cbaae03556a65fb.js",
+				"static/js/38.f4191cbaae03556a65fb.js.map",
+				"static/img/logo@2x.png",
+				"static/img/main_driver@3x.7fcf4ca.png",
+				"static/img/score_header@2x.0b35c03.png",
+				"static/js/9.12705443db964c96ef44.js",
+				"static/js/41.a5d820b4ed6543d4b340.js",
+				"static/js/0.42e9bca97dc54a132053.js",
+				"static/js/5.7bd143a79c3a801f820b.js.map",
+				"static/js/35.8232dabb7c7322b8bd9c.js.map",
+				"static/css/app.1da706e4eaf20d7756928f9aa7987553.css.map",
+				"static/js/39.16a78742b79b950ea257.js.map",
+				"static/js/23.41892de278c00da14ccd.js",
+				"static/js/4.3b9b979deb3dc282a759.js",
+				"static/js/12.759e706178bda4db7b30.js.map",
+				"static/js/37.739801a49402dc286b02.js",
+				"static/js/32.a82ad706230427ee9894.js.map",
+				"static/js/6.fb60a2a8e902e97cb317.js.map",
+				"static/img/logo.5e907da.png"
+			]
+		}
+	}
+}

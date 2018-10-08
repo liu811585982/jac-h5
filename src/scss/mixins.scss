@@ -1,0 +1,90 @@
+
+$baseFontSize: 46.875; //基于视觉稿横屏尺寸/100得出的基准font-size
+@function px2rem ($px){
+    @return $px / $baseFontSize * 1rem;
+}
+
+// flex
+@mixin flex ($baseItems: center, $baseFlow: column nowrap, $baseJuestify: flex-start) {
+    display: flex;
+    display: -webkit-flex;
+    align-items: $baseItems;
+    -webit-align-items: $baseItems;
+    flex-flow: $baseFlow;
+    -webkit-flex-flow: $baseFlow;
+    justify-content: $baseJuestify;
+    -webkit-justify-content: $baseJuestify;
+}
+
+// 宽度
+@mixin wh ($width, $height) {
+    width: $width;
+    height: $height;
+}
+// border-radius
+@mixin borderRadius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin border-1px ($color){
+    position: relative;
+    &:after{
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid $color;
+      content: ' ';
+  }
+}
+
+@mixin border-b-1px ($color){
+    position: relative;
+    &:after{
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid $color;
+      content: ' ';
+  }
+}
+
+@mixin border-t-1px ($color){
+    position: relative;
+    &:after{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border-top: 1px solid $color;
+      content: ' ';
+  }
+}
+
+// 2x 3x背景图
+@mixin bg-image($url){
+    background-image: url($url + "@2x.png");
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+        background-image: url($url + "@3x.png");
+    }
+}
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin hcalc ($exp) {
+    height: -moz-calc($exp);
+    height: -webkit-calc($exp);
+    height: calc($exp);
+}

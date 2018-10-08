@@ -1,0 +1,15 @@
+{
+  "index.html": {
+    "resources": [
+      "static/js/vendor.2abdff1ebeb6a9827cba.js",
+      "static/js/app.36b6baff71f263698514.js",
+      "static/js/manifest.502601cd66350d8261fe.js",
+      "static/css/app.1da706e4eaf20d7756928f9aa7987553.css",
+      "static/js/manifest.0bac98c87447664a0cad.js",
+      "static/css/app.454c3b6f8c883f5dfa9e37e0b6d6e7b7.css",
+      "static/js/app.820301300634b7a10251.js",
+      "static/js/vendor.05c505902774687b232c.js"
+    ],
+    "refer": []
+  }
+}
